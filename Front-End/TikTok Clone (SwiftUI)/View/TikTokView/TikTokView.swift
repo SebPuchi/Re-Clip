@@ -80,6 +80,10 @@ struct TikTokView: View {
                     .frame(width: size.height)
                     .tabViewStyle(.page(indexDisplayMode: .never))
                     .frame(width: size.width)
+                    .onChange(of: selectedIndex) { newValue in
+                                // Pause the video when the tab view index changes
+                                player(for: DummyVideo.videos[newValue]).pause()
+                            }
             }
         }
 
