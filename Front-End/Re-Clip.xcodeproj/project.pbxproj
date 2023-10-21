@@ -19,6 +19,8 @@
 		40C8AC4E292587FE005D6B9B /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8AC4D292587FE005D6B9B /* Icon.swift */; };
 		40C8AC50292599D8005D6B9B /* TikTokVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8AC4F292599D8005D6B9B /* TikTokVideo.swift */; };
 		40C8AC522925B6B6005D6B9B /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8AC512925B6B6005D6B9B /* DummyData.swift */; };
+		9E12F1992AE4430A00069F75 /* AIVideoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12F1982AE4430A00069F75 /* AIVideoModels.swift */; };
+		9E12F19F2AE44C3B00069F75 /* Snaptik.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E12F19E2AE44C3B00069F75 /* Snaptik.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		40C8AC4D292587FE005D6B9B /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		40C8AC4F292599D8005D6B9B /* TikTokVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokVideo.swift; sourceTree = "<group>"; };
 		40C8AC512925B6B6005D6B9B /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		9E12F1982AE4430A00069F75 /* AIVideoModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIVideoModels.swift; sourceTree = "<group>"; };
+		9E12F19E2AE44C3B00069F75 /* Snaptik.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Snaptik.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		40C8AC29292577B1005D6B9B = {
 			isa = PBXGroup;
 			children = (
+				9E12F19E2AE44C3B00069F75 /* Snaptik.mp4 */,
 				40C8AC34292577B1005D6B9B /* TikTok Clone (SwiftUI) */,
 				40C8AC33292577B1005D6B9B /* Products */,
 			);
@@ -135,6 +140,7 @@
 				40C8AC4F292599D8005D6B9B /* TikTokVideo.swift */,
 				40C8AC512925B6B6005D6B9B /* DummyData.swift */,
 				404C312A29299962009299F5 /* PreferenceKeys.swift */,
+				9E12F1982AE4430A00069F75 /* AIVideoModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40C8AC3D292577B3005D6B9B /* Preview Assets.xcassets in Resources */,
+				9E12F19F2AE44C3B00069F75 /* Snaptik.mp4 in Resources */,
 				40C8AC3A292577B3005D6B9B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +222,7 @@
 				40C8AC36292577B1005D6B9B /* TikTok_Clone__SwiftUI_App.swift in Sources */,
 				404C311C292833CA009299F5 /* HomeView.swift in Sources */,
 				40C8AC522925B6B6005D6B9B /* DummyData.swift in Sources */,
+				9E12F1992AE4430A00069F75 /* AIVideoModels.swift in Sources */,
 				404C31212928531A009299F5 /* Color.swift in Sources */,
 				40C8AC4E292587FE005D6B9B /* Icon.swift in Sources */,
 				40C8AC4829257851005D6B9B /* TikTokViewModel.swift in Sources */,

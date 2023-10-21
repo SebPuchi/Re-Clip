@@ -4,6 +4,8 @@
 
 import SwiftUI
 
+import AVKit
+
 struct TikTokView: View {
     @ObservedObject var viewModel = TikTokViewModel()
     @State  var selectedIndex = 0
@@ -51,33 +53,34 @@ struct TikTokView: View {
                 let size = proxy.size
 
                 TabView(selection: $selectedIndex) {
-                    ForEach(0..<DummyPhoto.photos.count, id: \.self) { index in
-                        let tiktok = DummyPhoto.photos[index]
-                        let overlayTikTok = tikTokArray[index]
-                        
-                        tiktok.photo
-                            .resizable()
-                            .clipped()
-                            .aspectRatio(contentMode: .fill)
+                    ForEach(0..<DummyVideo.videos.count, id: \.self) { index in
+                        let video = DummyVideo.videos[index]
+
+                        VideoPlayer(player: player(for: video))
                             .frame(width: size.width)
                             .frame(height: size.height)
-                            .clipped()
+                            .onAppear {
+                                // Start playing the video when it appears
+                                player(for: video).play()
+                            }
+                            .onDisappear {
+                                // Stop the video when it disappears
+                                player(for: video).pause()
+                            }
                             .overlay {
+                                let overlayTikTok = tikTokArray[index]
                                 overlayTikTok
-                               
                                     .padding(.bottom, 30)
                                     .padding(.trailing, 5)
                                     .padding(.leading, 10)
                             }
-                            .rotationEffect(.init(degrees: -90))
-                            .ignoresSafeArea(.all, edges: .top)
                     }
                 }
-                .rotationEffect(.init(degrees: 90))
-                .frame(width: size.height)
-                .tabViewStyle(.page(indexDisplayMode: .never))
-                .frame(width: size.width)
             }
+        }
+
+        func player(for video: DummyVideo) -> AVPlayer {
+            return AVPlayer(url: video.videoURL)
         }
     
 }
