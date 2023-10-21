@@ -26,66 +26,18 @@ struct HomeView: View {
             .ignoresSafeArea(.keyboard)
             .edgesIgnoringSafeArea(.top)
             
-            TopControls()
+            
             
         }
         .foregroundColor(.white)
         
     }
     
-    @ViewBuilder
-    func TopControls()->some View {
-        VStack {
-            HStack {
-                Button {
-                    
-                } label: {
-                    Image(systemName: "play.tv")
-                }
-                
-                HStack {
-                    Button("Following") {
-                        withAnimation { tabSelection = 1 }
-                    }
-                    .overlay {
-                        if tabSelection == 1 {
-                            Rectangle()
-                                .frame(width: 30, height: 3.5)
-                                .offset(y: 17.5)
-                                .matchedGeometryEffect(id: "homeTab", in: nsHome)
-                        }
-                    }
-                    Button("For You") {
-                        withAnimation { tabSelection = 2 }
-                    }
-                    .overlay {
-                        if tabSelection == 2 {
-                            Rectangle()
-                                .frame(width: 30, height: 3.5)
-                                .offset(y: 17.5)
-                                .matchedGeometryEffect(id: "homeTab", in: nsHome)
-                        }
-                    }
-                }
-                .frame(maxWidth: .infinity)
-                .fontWeight(.semibold)
-                .font(.subheadline)
-                
-                Button {
-                    
-                } label: {
-                    Image(systemName: "magnifyingglass")
-                }
-                
-            }
-            .padding(.horizontal, 25)
-            Spacer()
+    
+    
+    struct HomeView_Previews: PreviewProvider {
+        static var previews: some View {
+            HomeView()
         }
-    }
-}
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
     }
 }

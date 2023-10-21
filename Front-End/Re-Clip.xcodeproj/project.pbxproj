@@ -38,7 +38,7 @@
 		404C312629295ECB009299F5 /* ProfileContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContentView.swift; sourceTree = "<group>"; };
 		404C312829295F69009299F5 /* UserPostsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsGridView.swift; sourceTree = "<group>"; };
 		404C312A29299962009299F5 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
-		40C8AC32292577B1005D6B9B /* TikTok Clone (SwiftUI).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TikTok Clone (SwiftUI).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C8AC32292577B1005D6B9B /* Re-Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Re-Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C8AC35292577B1005D6B9B /* TikTok_Clone__SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTok_Clone__SwiftUI_App.swift; sourceTree = "<group>"; };
 		40C8AC37292577B1005D6B9B /* TikTokView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokView.swift; sourceTree = "<group>"; };
 		40C8AC39292577B3005D6B9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		40C8AC33292577B1005D6B9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40C8AC32292577B1005D6B9B /* TikTok Clone (SwiftUI).app */,
+				40C8AC32292577B1005D6B9B /* Re-Clip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,9 +190,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		40C8AC31292577B1005D6B9B /* TikTok Clone (SwiftUI) */ = {
+		40C8AC31292577B1005D6B9B /* Re-Clip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40C8AC40292577B3005D6B9B /* Build configuration list for PBXNativeTarget "TikTok Clone (SwiftUI)" */;
+			buildConfigurationList = 40C8AC40292577B3005D6B9B /* Build configuration list for PBXNativeTarget "Re-Clip" */;
 			buildPhases = (
 				40C8AC2E292577B1005D6B9B /* Sources */,
 				40C8AC2F292577B1005D6B9B /* Frameworks */,
@@ -202,9 +202,9 @@
 			);
 			dependencies = (
 			);
-			name = "TikTok Clone (SwiftUI)";
+			name = "Re-Clip";
 			productName = "TikTok Clone (SwiftUI)";
-			productReference = 40C8AC32292577B1005D6B9B /* TikTok Clone (SwiftUI).app */;
+			productReference = 40C8AC32292577B1005D6B9B /* Re-Clip.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 40C8AC2D292577B1005D6B9B /* Build configuration list for PBXProject "TikTok Clone (SwiftUI)" */;
+			buildConfigurationList = 40C8AC2D292577B1005D6B9B /* Build configuration list for PBXProject "Re-Clip" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -235,7 +235,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40C8AC31292577B1005D6B9B /* TikTok Clone (SwiftUI) */,
+				40C8AC31292577B1005D6B9B /* Re-Clip */,
 			);
 		};
 /* End PBXProject section */
@@ -456,7 +456,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		40C8AC2D292577B1005D6B9B /* Build configuration list for PBXProject "TikTok Clone (SwiftUI)" */ = {
+		40C8AC2D292577B1005D6B9B /* Build configuration list for PBXProject "Re-Clip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40C8AC3E292577B3005D6B9B /* Debug */,
@@ -465,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40C8AC40292577B3005D6B9B /* Build configuration list for PBXNativeTarget "TikTok Clone (SwiftUI)" */ = {
+		40C8AC40292577B3005D6B9B /* Build configuration list for PBXNativeTarget "Re-Clip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40C8AC41292577B3005D6B9B /* Debug */,
