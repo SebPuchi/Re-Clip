@@ -67,6 +67,11 @@ struct TikTokControls: View {
                 Text(text)
                     .font(.callout)
                     .opacity(0.75)
+                    .onTapGesture {
+                        withAnimation {
+                            isExpanded.toggle()
+                        }
+                    }
             } else {
                 Text(text)
                     .lineLimit(2)
@@ -80,6 +85,7 @@ struct TikTokControls: View {
             }
         }
     }
+
 
     
     @ViewBuilder
