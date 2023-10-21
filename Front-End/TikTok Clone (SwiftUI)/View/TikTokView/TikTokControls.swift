@@ -14,8 +14,6 @@ struct VideoButton: Identifiable, Hashable {
 }
 
 
-
-
 struct TikTokControls: View {
     let title: String
     let timeAgo: String
