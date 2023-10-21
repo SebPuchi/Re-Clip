@@ -38,7 +38,9 @@ struct TikTokView: View {
                     //Vertical Controls
                         .overlay {
                             TikTokControls()
-                                .padding(.bottom)
+                                .padding(.bottom,30)
+                                .padding(.trailing,5)
+                                .padding(.leading,10)
                         }
                         .rotationEffect(.init(degrees: -90))
                         .ignoresSafeArea(.all, edges: .top)
