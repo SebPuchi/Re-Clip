@@ -19,9 +19,6 @@
 		40C8AC4E292587FE005D6B9B /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8AC4D292587FE005D6B9B /* Icon.swift */; };
 		40C8AC50292599D8005D6B9B /* TikTokVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8AC4F292599D8005D6B9B /* TikTokVideo.swift */; };
 		40C8AC522925B6B6005D6B9B /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8AC512925B6B6005D6B9B /* DummyData.swift */; };
-		40C8AC542925BAB1005D6B9B /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8AC532925BAB1005D6B9B /* CommentsView.swift */; };
-		40C8AC572926FCB2005D6B9B /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8AC562926FCB2005D6B9B /* CommentView.swift */; };
-		40C8AC59292703DA005D6B9B /* CommentTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8AC58292703DA005D6B9B /* CommentTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +35,6 @@
 		40C8AC4D292587FE005D6B9B /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		40C8AC4F292599D8005D6B9B /* TikTokVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokVideo.swift; sourceTree = "<group>"; };
 		40C8AC512925B6B6005D6B9B /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
-		40C8AC532925BAB1005D6B9B /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
-		40C8AC562926FCB2005D6B9B /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
-		40C8AC58292703DA005D6B9B /* CommentTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				40C8AC44292577E0005D6B9B /* TikTokView */,
-				40C8AC552925BAB6005D6B9B /* CommentsView */,
 				4025AC63292AE674005AA602 /* HomeView */,
 			);
 			path = View;
@@ -144,16 +137,6 @@
 				404C312A29299962009299F5 /* PreferenceKeys.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		40C8AC552925BAB6005D6B9B /* CommentsView */ = {
-			isa = PBXGroup;
-			children = (
-				40C8AC532925BAB1005D6B9B /* CommentsView.swift */,
-				40C8AC562926FCB2005D6B9B /* CommentView.swift */,
-				40C8AC58292703DA005D6B9B /* CommentTextFieldView.swift */,
-			);
-			path = CommentsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,9 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40C8AC572926FCB2005D6B9B /* CommentView.swift in Sources */,
 				40C8AC38292577B1005D6B9B /* TikTokView.swift in Sources */,
-				40C8AC59292703DA005D6B9B /* CommentTextFieldView.swift in Sources */,
 				404C312B29299962009299F5 /* PreferenceKeys.swift in Sources */,
 				40C8AC4C29257A20005D6B9B /* TikTokControls.swift in Sources */,
 				40C8AC36292577B1005D6B9B /* TikTok_Clone__SwiftUI_App.swift in Sources */,
@@ -237,7 +218,6 @@
 				404C31212928531A009299F5 /* Color.swift in Sources */,
 				40C8AC4E292587FE005D6B9B /* Icon.swift in Sources */,
 				40C8AC4829257851005D6B9B /* TikTokViewModel.swift in Sources */,
-				40C8AC542925BAB1005D6B9B /* CommentsView.swift in Sources */,
 				40C8AC50292599D8005D6B9B /* TikTokVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

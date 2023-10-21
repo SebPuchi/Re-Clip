@@ -1,8 +1,5 @@
 //
-//  ContentView.swift
-//  TikTok Clone (SwiftUI)
-//
-//  Created by Jesse Chan on 11/16/22.
+
 //
 
 import SwiftUI
@@ -48,7 +45,7 @@ struct TikTokView: View {
                     
                 }
             }
-            //Scrollable view 
+            //Scrollable view (Transformation of horizontal to vert (kinda of loose but works)
             .rotationEffect(.init(degrees: 90))
             .frame(width: size.height)
             .tabViewStyle(.page(indexDisplayMode: .never))
