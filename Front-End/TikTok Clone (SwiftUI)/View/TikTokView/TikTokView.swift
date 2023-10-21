@@ -73,15 +73,24 @@ struct TikTokView: View {
                                     .padding(.bottom, 30)
                                     .padding(.trailing, 5)
                                     .padding(.leading, 10)
-                            }
+                            }.rotationEffect(.init(degrees: -90))
+                            .ignoresSafeArea(.all, edges: .top)
                     }
-                }
+                }    .rotationEffect(.init(degrees: 90))
+                    .frame(width: size.height)
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    .frame(width: size.width)
             }
         }
 
         func player(for video: DummyVideo) -> AVPlayer {
             return AVPlayer(url: video.videoURL)
         }
+    
+    
+
+    
+    
     
 }
 
