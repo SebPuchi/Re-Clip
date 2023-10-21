@@ -18,46 +18,10 @@ struct TikTokView: View {
         }
         .foregroundColor(.white)
         .ignoresSafeArea(.keyboard)
-        .sheet(isPresented: $isShowingComments) {
-            CommentsView()
-                .presentationDetents([.height(UIScreen.main.bounds.height * 0.75)])
-        }
+        
     }
     
-    @ViewBuilder
-    func TopControls()->some View {
-        VStack {
-            HStack {
-                Button {
-                    
-                } label: {
-                    Image(systemName: "play.tv")
-                }
-                
-                HStack {
-                    Button("Following") {
-                        
-                    }
-                    Button("For You") {
-                        
-                    }
-                }
-                .frame(maxWidth: .infinity)
-                .fontWeight(.semibold)
-                .font(.subheadline)
-                
-                Button {
-                    
-                } label: {
-                    Image(systemName: "magnifyingglass")
-                }
-                
-            }
-            .padding(.horizontal, 25)
-            Spacer()
-        }
-    }
-    
+
     @ViewBuilder
     func VideoView()->some View {
         GeometryReader { proxy in
