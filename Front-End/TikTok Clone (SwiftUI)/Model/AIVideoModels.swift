@@ -15,6 +15,8 @@ struct DummyVideo: Identifiable {
 
 extension DummyVideo {
     static let videos: [DummyVideo] = [
+        DummyVideo(videoURL: Bundle.main.url(forResource: "Snaptik", withExtension: "mp4")!),
+        DummyVideo(videoURL: Bundle.main.url(forResource: "Snaptik", withExtension: "mp4")!),
         DummyVideo(videoURL: Bundle.main.url(forResource: "Snaptik", withExtension: "mp4")!)
     ]
 }
