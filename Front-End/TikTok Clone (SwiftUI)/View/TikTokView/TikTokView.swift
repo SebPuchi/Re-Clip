@@ -34,7 +34,7 @@ struct TikTokView: View {
                     
                     //Vertical Controls
                         .overlay {
-                            TikTokControls()
+                            TikTokControls(title: "A NEW RESARHC PAPER", timeAgo: "1h ago", description: "This is the first video description.")
                                 .padding(.bottom,30)
                                 .padding(.trailing,5)
                                 .padding(.leading,10)

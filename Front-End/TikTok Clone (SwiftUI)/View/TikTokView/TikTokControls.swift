@@ -1,7 +1,3 @@
-//
-
-//
-
 import SwiftUI
 
 struct VideoButton: Identifiable, Hashable {
@@ -14,43 +10,42 @@ extension VideoButton {
     static let buttons = [
         VideoButton(systemImageName: "heart.fill", subtitle: "322"),
         VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "105"),
- 
     ]
 }
 
 struct TikTokControls: View {
-  
+    let title: String
+    let timeAgo: String
+    let description: String
+
     var body: some View {
         ZStack {
-                VStack {
-                        Spacer()
-                            HStack(alignment: .bottom) {
-                                VideoDetails()
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                    .padding(.trailing, 30)
-                                VideoButtons()
-                            }
-                    }
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .padding(.horizontal)
+            VStack {
+                Spacer()
+                HStack(alignment: .bottom) {
+                    VideoDetails()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.trailing, 30)
+                    VideoButtons()
+                }
+            }
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.horizontal)
         }
     }
-    
+
     @ViewBuilder
     func VideoDetails() -> some View {
         VStack(alignment: .leading, spacing: 7.5) {
             HStack {
-                Text("TITLE_OF_PAPER")
-                Text("· 3d ago")
+                Text(title)
+                Text("· \(timeAgo)")
                     .opacity(0.5)
             }
             .fontWeight(.medium)
 
-            ExpandableText(text: """
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                """
-            )
+            ExpandableText(text: description)
         }
         .font(.callout)
     }
@@ -83,16 +78,12 @@ struct TikTokControls: View {
         }
     }
 
-
-    
     @ViewBuilder
-    func VideoButtons()->some View {
+    func VideoButtons() -> some View {
         VStack(alignment: .trailing, spacing: 15) {
-            
-            
             ForEach(VideoButton.buttons, id: \.id) { button in
                 Button {
-                
+                    // Handle button action here
                 } label: {
                     VStack(spacing: 2.5) {
                         Image(systemName: button.systemImageName)
