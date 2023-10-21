@@ -6,8 +6,13 @@ import SwiftUI
 
 struct TikTokView: View {
     @ObservedObject var viewModel = TikTokViewModel()
+    @State  var selectedIndex = 0
 
-    @State var selectedIndex = 0
+   
+     let tikTokArray = [TikTokControls(title: "A NEW RESEARCH PAPER", timeAgo: "1h ago", description: "This is the first video description."),TikTokControls(title: "Another Title", timeAgo: "2h ago", description: "This is the second video description."),TikTokControls(title: "Yet Another Title", timeAgo: "3h ago", description: "This is the third video description."),TikTokControls(title: "Yet Another Title", timeAgo: "3h ago", description: "This is the third video description."),TikTokControls(title: "Yet Another Title", timeAgo: "3h ago", description: "This is the third video description."),TikTokControls(title: "Yet Another Title", timeAgo: "3h ago", description: "This is the third video description.")
+     
+     
+     ]
     
     var body: some View {
         ZStack {
@@ -19,48 +24,41 @@ struct TikTokView: View {
     
 
     @ViewBuilder
-    func VideoView()->some View {
-        GeometryReader { proxy in
-            let size = proxy.size
-            
-            TabView {
-                ForEach(DummyPhoto.photos, id: \.id) { tiktok in
-                    tiktok.photo
-                        .resizable().clipped()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: size.width)
-                        .frame(height: size.height)
-                        .clipped()
-                    
-                    //Vertical Controls
-                        .overlay {
-                            TikTokControls(title: "A NEW RESARHC PAPER", timeAgo: "1h ago", description: "This is the first video description.")
-                                .padding(.bottom,30)
-                                .padding(.trailing,5)
-                                .padding(.leading,10)
-                        }
-                        .rotationEffect(.init(degrees: -90))
-                        .ignoresSafeArea(.all, edges: .top)
+        func VideoView() -> some View {
+            GeometryReader { proxy in
+                let size = proxy.size
+
+                TabView(selection: $selectedIndex) {
+                    ForEach(0..<DummyPhoto.photos.count, id: \.self) { index in
+                        let tiktok = DummyPhoto.photos[index]
+                        let overlayTikTok = tikTokArray[index]
                         
-                    
+                        tiktok.photo
+                            .resizable()
+                            .clipped()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: size.width)
+                            .frame(height: size.height)
+                            .clipped()
+                            .overlay {
+                                overlayTikTok
+                               
+                                    .padding(.bottom, 30)
+                                    .padding(.trailing, 5)
+                                    .padding(.leading, 10)
+                            }
+                            .rotationEffect(.init(degrees: -90))
+                            .ignoresSafeArea(.all, edges: .top)
+                    }
                 }
+                .rotationEffect(.init(degrees: 90))
+                .frame(width: size.height)
+                .tabViewStyle(.page(indexDisplayMode: .never))
+                .frame(width: size.width)
             }
-            //Scrollable view (Transformation of horizontal to vert (kinda of loose but works)
-            .rotationEffect(.init(degrees: 90))
-            .frame(width: size.height)
-            .tabViewStyle(.page(indexDisplayMode: .never))
-            .frame(width: size.width)
-         
         }
-        
-    }
     
 }
 
 
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        TikTokView()
-    }
-}
