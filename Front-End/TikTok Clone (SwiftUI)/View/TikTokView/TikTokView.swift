@@ -53,8 +53,8 @@ struct TikTokView: View {
                 let size = proxy.size
 
                 TabView(selection: $selectedIndex) {
-                    ForEach(0..<DummyVideo.videos.count, id: \.self) { index in
-                        let video = DummyVideo.videos[index]
+                    ForEach(0..<AIVideoModels.videos.count, id: \.self) { index in
+                        let video = AIVideoModels.videos[index]
 
                         VideoPlayer(player: player(for: video))
                             .frame(width: size.width)
@@ -82,12 +82,12 @@ struct TikTokView: View {
                     .frame(width: size.width)
                     .onChange(of: selectedIndex) { newValue in
                                 // Pause the video when the tab view index changes
-                                player(for: DummyVideo.videos[newValue]).pause()
+                                player(for: AIVideoModels.videos[newValue]).pause()
                             }
             }
         }
 
-        func player(for video: DummyVideo) -> AVPlayer {
+        func player(for video: AIVideoModels) -> AVPlayer {
             return AVPlayer(url: video.videoURL)
         }
     
