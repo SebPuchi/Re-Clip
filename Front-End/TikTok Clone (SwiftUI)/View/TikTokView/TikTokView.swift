@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TikTokView: View {
     @ObservedObject var viewModel = TikTokViewModel()
-    @State var isShowingComments = false
+
     @State var selectedIndex = 0
     
     var body: some View {
@@ -35,7 +35,7 @@ struct TikTokView: View {
                         .frame(width: size.width)
                         .clipped()
                         .overlay {
-                            TikTokControls(commentsButtonAction: {isShowingComments = true})
+                            TikTokControls()
                                 .padding(.bottom)
                         }
                         .rotationEffect(.init(degrees: -90))

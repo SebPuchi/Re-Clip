@@ -16,16 +16,13 @@ struct VideoButton: Identifiable, Hashable {
 extension VideoButton {
     static let buttons = [
         VideoButton(systemImageName: "heart.fill", subtitle: "322"),
-        VideoButton(systemImageName: "ellipsis.message.fill", subtitle: "54"),
-        VideoButton(systemImageName: "bookmark.fill", subtitle: "15"),
         VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "105"),
-        VideoButton(systemImageName: "circle.fill", subtitle: nil)
+ 
     ]
 }
 
 struct TikTokControls: View {
-    let commentsButtonAction: ()->Void
-    
+  
     var body: some View {
         ZStack {
                 VStack {
@@ -107,7 +104,7 @@ struct TikTokControls: View {
             
             ForEach(VideoButton.buttons, id: \.id) { button in
                 Button {
-                    commentsButtonAction()
+                
                 } label: {
                     VStack(spacing: 2.5) {
                         Image(systemName: button.systemImageName)
@@ -126,9 +123,3 @@ struct TikTokControls: View {
     }
 }
 
-struct TikTokControls_Previews: PreviewProvider {
-    static var previews: some View {
-        TikTokControls(commentsButtonAction: {})
-            .background(.black)
-    }
-}
