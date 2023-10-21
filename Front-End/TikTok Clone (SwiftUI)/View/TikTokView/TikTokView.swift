@@ -57,8 +57,10 @@ struct TikTokView: View {
                         let video = AIVideoModels.videos[index]
 
                         VideoPlayer(player: player(for: video))
+                        
                             .frame(width: size.width)
                             .frame(height: size.height)
+                        
                             .onAppear {
                                 // Start playing the video when it appears
                                 player(for: video).play()
