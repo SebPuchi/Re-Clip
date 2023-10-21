@@ -12,12 +12,14 @@ struct HomeView: View {
     
     
     var body: some View {
+        
         ZStack {
            
-            TikTokView()
+            TikTokView().ignoresSafeArea()
           
-        }
- 
+        }.frame(maxWidth: .infinity)
+            .background(Color.black)
+
         
     }
     

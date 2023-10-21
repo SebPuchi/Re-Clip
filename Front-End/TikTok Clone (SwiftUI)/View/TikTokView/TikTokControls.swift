@@ -66,18 +66,6 @@ struct TikTokControls: View {
     func VideoButtons()->some View {
         VStack(alignment: .trailing, spacing: 15) {
             
-
-
-//            Button {
-//
-//            } label: {
-//                Image(systemName: "circle.fill")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .frame(width: 40, height: 40)
-//                    .offset(x: 5)
-//            }
-            
             
             ForEach(VideoButton.buttons, id: \.id) { button in
                 Button {

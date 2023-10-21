@@ -32,7 +32,10 @@ struct TikTokView: View {
                         .resizable().clipped()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: size.width)
+                        .frame(height: size.height)
                         .clipped()
+                    
+                    //Vertical Controls
                         .overlay {
                             TikTokControls()
                                 .padding(.bottom)
@@ -43,6 +46,7 @@ struct TikTokView: View {
                     
                 }
             }
+            //Scrollable view 
             .rotationEffect(.init(degrees: 90))
             .frame(width: size.height)
             .tabViewStyle(.page(indexDisplayMode: .never))
