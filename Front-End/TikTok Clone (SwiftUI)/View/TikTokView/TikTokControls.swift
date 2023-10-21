@@ -4,19 +4,23 @@ struct VideoButton: Identifiable, Hashable {
     let id = UUID()
     let systemImageName: String
     let subtitle: String?
+
+    init(systemImageName: String, subtitle: String?) {
+        self.systemImageName = systemImageName
+        self.subtitle = subtitle
+        
+        
+    }
 }
 
-extension VideoButton {
-    static let buttons = [
-        VideoButton(systemImageName: "heart.fill", subtitle: "322"),
-        VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "105"),
-    ]
-}
+
+
 
 struct TikTokControls: View {
     let title: String
     let timeAgo: String
     let description: String
+    let buttons: [VideoButton]
 
     var body: some View {
         ZStack {
@@ -81,7 +85,7 @@ struct TikTokControls: View {
     @ViewBuilder
     func VideoButtons() -> some View {
         VStack(alignment: .trailing, spacing: 15) {
-            ForEach(VideoButton.buttons, id: \.id) { button in
+            ForEach(buttons, id: \.id) { button in
                 Button {
                     // Handle button action here
                 } label: {
@@ -100,5 +104,6 @@ struct TikTokControls: View {
             }
         }
     }
+
 }
 

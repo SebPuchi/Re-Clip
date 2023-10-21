@@ -11,9 +11,3 @@ struct TikTokVideo: Identifiable {
     let soundTitle: String
 }
 
-struct TikTokData: Identifiable {
-    let id = UUID()
-    let title: String
-    let timeAgo: String
-    let description: String
-}

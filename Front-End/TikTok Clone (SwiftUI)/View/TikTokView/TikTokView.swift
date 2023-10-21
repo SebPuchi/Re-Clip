@@ -8,11 +8,33 @@ struct TikTokView: View {
     @ObservedObject var viewModel = TikTokViewModel()
     @State  var selectedIndex = 0
 
-   
-     let tikTokArray = [TikTokControls(title: "A NEW RESEARCH PAPER", timeAgo: "1h ago", description: "This is the first video description."),TikTokControls(title: "Another Title", timeAgo: "2h ago", description: "This is the second video description."),TikTokControls(title: "Yet Another Title", timeAgo: "3h ago", description: "This is the third video description."),TikTokControls(title: "Yet Another Title", timeAgo: "3h ago", description: "This is the third video description."),TikTokControls(title: "Yet Another Title", timeAgo: "3h ago", description: "This is the third video description."),TikTokControls(title: "Yet Another Title", timeAgo: "3h ago", description: "This is the third video description.")
-     
-     
-     ]
+    let tikTokArray = [
+        TikTokControls(title: "ONE Title", timeAgo: "2h ago", description: "This is the second video description.", buttons: [
+            VideoButton(systemImageName: "heart.fill", subtitle: "10.1k"),
+            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "204"),
+        ]),
+        TikTokControls(title: "Another Title", timeAgo: "3h ago", description: "This is the second video description.", buttons: [
+            VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
+            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
+        ]),
+        TikTokControls(title: "Another Title", timeAgo: "3h ago", description: "This is the second video description.", buttons: [
+            VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
+            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
+        ]),
+        TikTokControls(title: "Another Title", timeAgo: "3h ago", description: "This is the second video description.", buttons: [
+            VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
+            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
+        ]),
+        TikTokControls(title: "Another Title", timeAgo: "3h ago", description: "This is the second video description.", buttons: [
+            VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
+            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
+        ]), TikTokControls(title: "Another Title", timeAgo: "3h ago", description: "This is the second video description.", buttons: [
+            VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
+            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
+        ])
+        // Add more TikTokControls instances with different parameters and unique VideoButton arrays here
+    ]
+
     
     var body: some View {
         ZStack {
