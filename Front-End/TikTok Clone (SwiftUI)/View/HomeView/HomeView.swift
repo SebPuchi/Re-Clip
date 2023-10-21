@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var tabSelection = 2
+
     
     @Namespace var nsHome
     
@@ -16,11 +16,10 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            TabView(selection: $tabSelection) {
+            TabView() {
                 TikTokView()
-                    .tag(1)
-                TikTokView()
-                    .tag(2)
+                    
+      
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .ignoresSafeArea(.keyboard)
