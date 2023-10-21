@@ -16,7 +16,6 @@ struct TikTokView: View {
         ZStack {
             VideoView()
         }
-        .foregroundColor(.white)
         .ignoresSafeArea(.keyboard)
         
     }
@@ -48,8 +47,9 @@ struct TikTokView: View {
             .frame(width: size.height)
             .tabViewStyle(.page(indexDisplayMode: .never))
             .frame(width: size.width)
+         
         }
-        .ignoresSafeArea(.all, edges: .top)
+        
     }
     
 }

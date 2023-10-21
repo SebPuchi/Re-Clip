@@ -10,16 +10,14 @@ import SwiftUI
 struct HomeView: View {
     @Namespace var nsHome
     
-    let commentsHeight = UIScreen.main.bounds.height * 0.75
     
     var body: some View {
         ZStack {
            
-                TikTokView()
+            TikTokView()
           
-            
         }
-        .foregroundColor(.white)
+ 
         
     }
     

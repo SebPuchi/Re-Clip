@@ -44,7 +44,7 @@ struct TikTokControls: View {
     func VideoDetails()->some View {
         VStack(alignment: .leading, spacing: 7.5) {
             HStack {
-                Text("some_user9")
+                Text("TITLE_OF_PAPER")
                 Text("· 3d ago")
                     .opacity(0.5)
             }
@@ -54,21 +54,7 @@ struct TikTokControls: View {
                 .font(.callout)
                 .opacity(0.75)
             
-            ScrollView(.horizontal) {
-                HStack {
-                    Image(systemName: "music.note")
-                    Text("This is a song name... more text here to see what it - @some_user9")
-                        .lineLimit(1)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .frame(alignment: .trailing)
-                }
-                .font(.callout)
-            }
-            .disabled(true)
-            .mask {
-                LinearGradient(colors: [.white, .black, .white], startPoint: .leading, endPoint: .trailing)
-            }
-            .frame(height: 25)
+
             
             
             
@@ -80,16 +66,7 @@ struct TikTokControls: View {
     func VideoButtons()->some View {
         VStack(alignment: .trailing, spacing: 15) {
             
-            NavigationLink {
-                ProfileView()
-            } label: {
-                Image(systemName: "circle.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 40, height: 40)
-                    .offset(x: 5)
-            }
-            .padding(.vertical)
+
 
 //            Button {
 //
