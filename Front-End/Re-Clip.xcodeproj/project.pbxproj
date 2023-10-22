@@ -23,6 +23,8 @@
 		9E12F19F2AE44C3B00069F75 /* Snaptik.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E12F19E2AE44C3B00069F75 /* Snaptik.mp4 */; };
 		9E12F1A92AE4780D00069F75 /* reading.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E12F1A82AE4780D00069F75 /* reading.mp4 */; };
 		9E12F1B12AE4ECFE00069F75 /* GH2_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E12F1B02AE4ECFD00069F75 /* GH2_3.mp4 */; };
+		9E12F1B32AE4F29D00069F75 /* GH1_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E12F1B22AE4F29D00069F75 /* GH1_4.mp4 */; };
+		9E12F1B72AE5098900069F75 /* open.pilot.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E12F1B62AE5098900069F75 /* open.pilot.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		9E12F19E2AE44C3B00069F75 /* Snaptik.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Snaptik.mp4; sourceTree = "<group>"; };
 		9E12F1A82AE4780D00069F75 /* reading.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reading.mp4; sourceTree = "<group>"; };
 		9E12F1B02AE4ECFD00069F75 /* GH2_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GH2_3.mp4; sourceTree = "<group>"; };
+		9E12F1B22AE4F29D00069F75 /* GH1_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GH1_4.mp4; sourceTree = "<group>"; };
+		9E12F1B62AE5098900069F75 /* open.pilot.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = open.pilot.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 		40C8AC29292577B1005D6B9B = {
 			isa = PBXGroup;
 			children = (
+				9E12F1B62AE5098900069F75 /* open.pilot.mp4 */,
+				9E12F1B22AE4F29D00069F75 /* GH1_4.mp4 */,
 				9E12F1B02AE4ECFD00069F75 /* GH2_3.mp4 */,
 				9E12F1A82AE4780D00069F75 /* reading.mp4 */,
 				9E12F19E2AE44C3B00069F75 /* Snaptik.mp4 */,
@@ -212,8 +218,10 @@
 				9E12F1A92AE4780D00069F75 /* reading.mp4 in Resources */,
 				40C8AC3D292577B3005D6B9B /* Preview Assets.xcassets in Resources */,
 				9E12F1B12AE4ECFE00069F75 /* GH2_3.mp4 in Resources */,
+				9E12F1B32AE4F29D00069F75 /* GH1_4.mp4 in Resources */,
 				9E12F19F2AE44C3B00069F75 /* Snaptik.mp4 in Resources */,
 				40C8AC3A292577B3005D6B9B /* Assets.xcassets in Resources */,
+				9E12F1B72AE5098900069F75 /* open.pilot.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
