@@ -6,6 +6,43 @@ import SwiftUI
 
 struct HomeView: View {
     @Namespace var nsHome
+
+    import Foundation
+
+    // Create a class to handle XML parsing
+    class EntryXMLParserDelegate: NSObject, XMLParserDelegate {
+        var parsingEntry = false
+        var entryData = [String: String]()
+        
+        // Called when an opening tag is encountered
+        func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
+            if elementName == "entry" {
+                parsingEntry = true
+            }
+        }
+        
+        // Called when the parser encounters characters within a tag
+        func parser(_ parser: XMLParser, foundCharacters string: String) {
+            if parsingEntry {
+                entryData[currentElement ?? ""] = (entryData[currentElement ?? ""] ?? "") + string
+            }
+        }
+        
+        // Called when a closing tag is encountered
+        func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+            if elementName == "entry" {
+                parsingEntry = false
+            }
+        }
+        
+        // Called when the parsing is complete
+        func parserDidEndDocument(_ parser: XMLParser) {
+            print(entryData)
+        }
+    }
+
+
+    //
     let tikTokArray = [
         TikTokControls(title: "ONE Title", timeAgo: "2h ago", description: "This is the second video description.", buttons: [
             VideoButton(systemImageName: "heart.fill", subtitle: "10.1k"),
