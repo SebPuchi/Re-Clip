@@ -20,6 +20,6 @@ extension AIVideoModels {
         AIVideoModels(videoURL: Bundle.main.url(forResource: "open.pilot", withExtension: "mp4")!),
         AIVideoModels(videoURL: Bundle.main.url(forResource: "open.pilot", withExtension: "mp4")!),
         AIVideoModels(videoURL: Bundle.main.url(forResource: "traffic", withExtension: "mp4")!),
-        AIVideoModels(videoURL: Bundle.main.url(forResource: "open.pilot", withExtension: "mp4")!)
+        AIVideoModels(videoURL: Bundle.main.url(forResource: "robot", withExtension: "mp4")!)
     ]
 }
