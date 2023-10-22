@@ -6,10 +6,14 @@ import SwiftUI
 
 import AVKit
 
+
+
 struct TikTokView: View {
     @ObservedObject var viewModel = TikTokViewModel()
     @State  var selectedIndex = 0
+    
 
+//Present Data 
     let tikTokArray = [
         TikTokControls(title: "ONE Title", timeAgo: "2h ago", description: "This is the second video description.", buttons: [
             VideoButton(systemImageName: "heart.fill", subtitle: "10.1k"),
@@ -34,7 +38,7 @@ struct TikTokView: View {
             VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
             VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
         ])
-        // Add more TikTokControls instances with different parameters and unique VideoButton arrays here
+      
     ]
 
     
@@ -62,8 +66,9 @@ struct TikTokView: View {
                             .frame(height: size.height)
                         
                             .onAppear {
-                                // Start playing the video when it appears
-                                player(for: video).play()
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                      player(for: video).play()
+                                  }
                             }
                             .onDisappear {
                                 // Stop the video when it disappears
