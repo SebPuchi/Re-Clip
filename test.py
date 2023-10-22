@@ -60,14 +60,14 @@ pipeline = AutoPipelineForText2Image.from_pretrained(
 images = []
 
 for idl, repo in enumerate(images_2d_list):
-	for idp, rompt in enumerate(repo):
+	for idp, prompt in enumerate(repo):
 
-	image = pipeline(
-		prompt="{}, reaslistic, detailed, 8k".format(prompt), 
-		negative_prompt="low quality, bad quality, neon colors, bad anatomy", 
-		guidance_scale=7.5,
-		height=768,
-		width=360,
-	).images[0]
+		image = pipeline(
+			prompt="{}, reaslistic, detailed, 8k".format(prompt), 
+			negative_prompt="low quality, bad quality, neon colors, bad anatomy", 
+			guidance_scale=7.5,
+			height=768,
+			width=360,
+		).images[0]
 
-	image.save("{}{}.png".format(idl,idp))
+		image.save("{}{}.png".format(idl,idp))
