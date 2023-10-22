@@ -15,7 +15,7 @@ struct AIVideoModels: Identifiable {
 
 extension AIVideoModels {
     static let videos: [AIVideoModels] = [
-        AIVideoModels(videoURL: Bundle.main.url(forResource: "Snaptik", withExtension: "mp4")!),
+        AIVideoModels(videoURL: Bundle.main.url(forResource: "final-2", withExtension: "mp4")!),
         AIVideoModels(videoURL: Bundle.main.url(forResource: "reading", withExtension: "mp4")!),
         AIVideoModels(videoURL: Bundle.main.url(forResource: "Snaptik", withExtension: "mp4")!)
     ]
