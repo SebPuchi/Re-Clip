@@ -53,18 +53,10 @@ The Re-Clip mobile app is built using Swift, ensuring a smooth and responsive us
 
 5. Start exploring and experiencing the world of research papers and GitHub repositories in a whole new way!
 
-## Contributing
-
-We welcome contributions from the open-source community. If you're interested in helping us improve and expand Re-Clip, feel free to create a pull request or open an issue.
 
 ## License
 
 Re-Clip is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Acknowledgments
-
-We would like to express our gratitude to the developers and maintainers of the open-source tools and libraries that have made Re-Clip possible. This project stands on the shoulders of many giants in the fields of NLP, video processing, AI art generation, and mobile development.
-
-Enjoy using Re-Clip and elevate your experience with research papers and GitHub repositories. Dive into the world of knowledge with captivating content, simplified for your convenience.
 
 Happy exploring! 🚀
