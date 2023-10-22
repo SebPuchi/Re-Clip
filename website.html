@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<style>
+			body {
+				color: black;
+			}
+		</style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+	</head>
+	<body>
+		<p>
+            <img width="100%" alt="logo" src="./assets/hero.png" />
+        </p>
+		<h2 id="re-clip-research-paper-and-github-repo-video-summerizer" style="text-align: center;">
+			Re-Clip - Research Paper and GitHub Repo Video Summarizer
+		</h2>
+		<p>
+			Re-Clip is a mobile application that revolutionizes the way we engage with
+			research papers and GitHub repositories. By leveraging cutting-edge
+			technologies like LangChang, MoviePy, Flask, Diffusion (an AI art
+			generator), and Swift, Re-Clip is designed to summarize and generate
+			captivating video content from research papers and GitHub repos, making
+			them more accessible and engaging to users. In essence, it&#39;s like a
+			social media platform specifically tailored for the world of research
+			papers and git repos.
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Our System</th>
+					<th>iOS App</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img height="450" alt="logo" src="./assets/infra.png" /></td>
+					<td><img height="450" alt="logo" src="./assets/scroll.gif" /></td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 id="key-features">Key Features</h2>
+		<h3 id="1-paper-repo-summarization">1. Paper/Repo Summarization</h3>
+		<p>
+			Re-Clip utilizes advanced natural language processing techniques provided
+			by LangChang to extract key insights and summarize research papers and
+			GitHub repositories. This feature ensures that users can quickly grasp the
+			essence of the content.
+		</p>
+		<h3 id="2-video-generation">2. Video Generation</h3>
+		<p>
+			With the help of MoviePy, Re-Clip transforms the summarized content into
+			short, visually engaging videos or reels. This not only simplifies the
+			understanding of complex concepts but also enhances the overall viewing
+			experience.
+		</p>
+		<h3 id="3-user-friendly-interface">3. User-Friendly Interface</h3>
+		<p>
+			Re-Clip combines technical elements of research papers and GitHub
+			repositories with a sleek and intuitive user interface. The
+			application&#39;s design is geared towards providing a seamless and
+			enjoyable experience for users, encouraging them to explore more.
+		</p>
+		<h3 id="4-ai-generated-art-integration">4. AI-Generated Art Integration</h3>
+		<p>
+			Re-Clip takes it a step further by incorporating AI-generated art using
+			Diffusion. This feature adds a unique and visually stimulating dimension
+			to the content, making the experience even more captivating.
+		</p>
+		<h3 id="5-swift-mobile-application">5. Swift Mobile Application</h3>
+		<p>
+			The Re-Clip mobile app is built using Swift, ensuring a smooth and
+			responsive user experience on iOS devices. The app is designed to make it
+			easy for users to access and interact with research papers and GitHub
+			repositories.
+		</p>
+		<h2 id="how-we-built-it">How we built it</h2>
+		<p>
+			We built the app in two parts: an iOS mobile app and a backend ML pipeline
+			in Python. The former offers the highly addictive infinite scroller
+			interface with our videos and the latter takes long-form content—research
+			papers and GitHub repos—and creates short videos.
+		</p>
+		<ul>
+			<li>
+				The iOS app was implemented by mimicking the familiar TikTok UI using
+				SwiftUI. The backend pipeline had several parts, it contained a
+				summarization service, a text-to-speech service and a video creation
+				service.
+			</li>
+			<li>
+				The summarization service took salient paragraphs of a research paper
+				(abstract and conclusion) or the README.md of a GitHub repository and
+				converted it to a chunked video script. This was done using the
+				LangChain library and used the
+				<a href="https://platform.openai.com/docs/models"
+					><code>text-davinci-003</code></a
+				>
+				OpenAI model to carry out the summarization. The summary was in the form
+				of a <code>.srt</code> file, the specification for subtitles.
+			</li>
+			<li>
+				The TTS service called the <strong>Google Cloud</strong>
+				<a href="https://cloud.google.com/text-to-speech">Text-to-Speech API</a>
+				to generate a natural sounding narration of our script.
+			</li>
+			<li>
+				The video generation service generated a video using the narration,
+				subtitles and scraped pictures from the long-form resource. This was
+				done using the
+				<a href="https://zulko.github.io/moviepy/">MoviePy</a> package.
+			</li>
+		</ul>
+		<h2 id="license">License</h2>
+		<p>
+			Re-Clip is licensed under the MIT License. See the
+			<a href="LICENSE">LICENSE</a> file for more details.
+		</p>
+		<p>Happy exploring! 🚀</p>
+	</body>
+</html>
