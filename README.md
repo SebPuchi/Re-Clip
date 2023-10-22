@@ -1,8 +1,10 @@
-<img width="425" alt="Screenshot 2023-10-22 at 4 42 46 AM" src="https://github.com/SebPuchi/Re-Clip/assets/30753067/89f2c1a9-434b-4f44-aee6-32a14ba1439f">
+<img width="425" alt="logo" src="/assets/logo.png">
 
 # Re-Clip - Research Paper and GitHub Repo Video Summerizer
 
 Re-Clip is a mobile application that revolutionizes the way we engage with research papers and GitHub repositories. By leveraging cutting-edge technologies like LangChang, MoviePy, Flask, Diffusion (an AI art generator), and Swift, Re-Clip is designed to summarize and generate captivating video content from research papers and GitHub repos, making them more accessible and engaging to users. In essence, it's like a social media platform specifically tailored for the world of research papers and git repos.
+
+<img width="425" alt="logo" src="/assets/scroll.gif">
 
 ## Key Features
 
