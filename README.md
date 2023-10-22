@@ -1,4 +1,6 @@
-# Re-Clip - Your Mobile Research Paper and GitHub Repo Video Summerizer
+<img width="425" alt="Screenshot 2023-10-22 at 4 42 46 AM" src="https://github.com/SebPuchi/Re-Clip/assets/30753067/89f2c1a9-434b-4f44-aee6-32a14ba1439f">
+
+# Re-Clip - Research Paper and GitHub Repo Video Summerizer
 
 Re-Clip is a mobile application that revolutionizes the way we engage with research papers and GitHub repositories. By leveraging cutting-edge technologies like LangChang, MoviePy, Flask, Diffusion (an AI art generator), and Swift, Re-Clip is designed to summarize and generate captivating video content from research papers and GitHub repos, making them more accessible and engaging to users. In essence, it's like a social media platform specifically tailored for the world of research papers and git repos.
 
@@ -19,40 +21,12 @@ Re-Clip takes it a step further by incorporating AI-generated art using Diffusio
 ### 5. Swift Mobile Application
 The Re-Clip mobile app is built using Swift, ensuring a smooth and responsive user experience on iOS devices. The app is designed to make it easy for users to access and interact with research papers and GitHub repositories.
 
-## How to Get Started
-
-1. Clone this repository to your local machine.
-   
-   ```bash
-   git clone https://github.com/yourusername/re-clip.git
-   ```
-
-2. Install the necessary dependencies for the backend and the mobile app.
-
-   - Backend (Flask, LangChang, Diffusion):
-   
-     ```bash
-     cd re-clip-backend
-     pip install -r requirements.txt
-     ```
-
-   - Mobile App (Swift):
-   
-     ```bash
-     cd re-clip-mobile
-     # Open the project in Xcode and build the app for your iOS device or simulator.
-     ```
-
-3. Start the Flask server for the backend.
-   
-   ```bash
-   flask run
-   ```
-
-4. Access the Re-Clip mobile app on your iOS device.
-
-5. Start exploring and experiencing the world of research papers and GitHub repositories in a whole new way!
-
+## How we built it
+We built the app in two parts: an iOS mobile app and a backend ML pipeline in Python. The former offers the highly addictive infinite scroller interface with our videos and the latter takes long-form content—research papers and GitHub repos—and creates short videos. 
+* The iOS app was implemented by mimicking the familiar TikTok UI using SwiftUI. The backend pipeline had several parts, it contained a summarization service, a text-to-speech service and a video creation service. 
+* The summarization service took salient paragraphs of a research paper (abstract and conclusion) or the README.md of a GitHub repository and converted it to a chunked video script. This was done using the LangChain library and used the [`text-davinci-003`](https://platform.openai.com/docs/models) OpenAI model to carry out the summarization. The summary was in the form of a `.srt` file, the specification for subtitles.
+* The TTS service called the **Google Cloud** [Text-to-Speech API](https://cloud.google.com/text-to-speech) to generate a natural sounding narration of our script. 
+* The video generation service generated a video using the narration, subtitles and scraped pictures from the long-form resource. This was done using the [MoviePy](https://zulko.github.io/moviepy/) package.
 
 ## License
 
