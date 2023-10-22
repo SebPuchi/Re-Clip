@@ -5,8 +5,9 @@
 Re-Clip is a mobile application that revolutionizes the way we engage with research papers and GitHub repositories. By leveraging cutting-edge technologies like LangChang, MoviePy, Flask, Diffusion (an AI art generator), and Swift, Re-Clip is designed to summarize and generate captivating video content from research papers and GitHub repos, making them more accessible and engaging to users. In essence, it's like a social media platform specifically tailored for the world of research papers and git repos.
 
 | Our System | iOS App |
-| == | == |
-| <img height="425" alt="logo" src="/assets/infra.png"> | <img height="425" alt="logo" src="/assets/scroll.gif"> | 
+| ---------- | ------- |
+|<img height="450" alt="logo" src="/assets/infra.png">|<img height="450" alt="logo" src="/assets/scroll.gif">| 
+
 
 ## Key Features
 
