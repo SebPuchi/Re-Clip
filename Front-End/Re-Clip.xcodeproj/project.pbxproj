@@ -25,6 +25,7 @@
 		9EB438082AE50BA900275C8F /* open.pilot.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438072AE50BA900275C8F /* open.pilot.mp4 */; };
 		9EB4380A2AE5117800275C8F /* LLM..mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438092AE5117700275C8F /* LLM..mp4 */; };
 		9EB4380C2AE5183D00275C8F /* localsend.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB4380B2AE5183D00275C8F /* localsend.mp4 */; };
+		9EB4380E2AE51DD600275C8F /* traffic.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB4380D2AE51DD500275C8F /* traffic.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		9EB438072AE50BA900275C8F /* open.pilot.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = open.pilot.mp4; sourceTree = "<group>"; };
 		9EB438092AE5117700275C8F /* LLM..mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLM..mp4; sourceTree = "<group>"; };
 		9EB4380B2AE5183D00275C8F /* localsend.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = localsend.mp4; sourceTree = "<group>"; };
+		9EB4380D2AE51DD500275C8F /* traffic.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = traffic.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		40C8AC29292577B1005D6B9B = {
 			isa = PBXGroup;
 			children = (
+				9EB4380D2AE51DD500275C8F /* traffic.mp4 */,
 				9EB4380B2AE5183D00275C8F /* localsend.mp4 */,
 				9EB438092AE5117700275C8F /* LLM..mp4 */,
 				9EB438072AE50BA900275C8F /* open.pilot.mp4 */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E12F1A92AE4780D00069F75 /* reading.mp4 in Resources */,
+				9EB4380E2AE51DD600275C8F /* traffic.mp4 in Resources */,
 				9EB4380C2AE5183D00275C8F /* localsend.mp4 in Resources */,
 				9EB438082AE50BA900275C8F /* open.pilot.mp4 in Resources */,
 				9EB4380A2AE5117800275C8F /* LLM..mp4 in Resources */,
