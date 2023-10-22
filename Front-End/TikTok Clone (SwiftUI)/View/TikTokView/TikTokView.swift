@@ -9,33 +9,12 @@ import AVKit
 struct TikTokView: View {
     @ObservedObject var viewModel = TikTokViewModel()
     @State  var selectedIndex = 0
+    var tikTokArray: [TikTokControls]
 
-    let tikTokArray = [
-        TikTokControls(title: "ONE Title", timeAgo: "2h ago", description: "This is the second video description.", buttons: [
-            VideoButton(systemImageName: "heart.fill", subtitle: "10.1k"),
-            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "204"),
-        ]),
-        TikTokControls(title: "Another Title", timeAgo: "3h ago", description: "This is the second video description.", buttons: [
-            VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
-            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
-        ]),
-        TikTokControls(title: "Another Title", timeAgo: "3h ago", description: "This is the second video description.", buttons: [
-            VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
-            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
-        ]),
-        TikTokControls(title: "Another Title", timeAgo: "3h ago", description: "This is the second video description.", buttons: [
-            VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
-            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
-        ]),
-        TikTokControls(title: "Another Title", timeAgo: "3h ago", description: "This is the second video description.", buttons: [
-            VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
-            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
-        ]), TikTokControls(title: "Another Title", timeAgo: "3h ago", description: "This is the second video description.", buttons: [
-            VideoButton(systemImageName: "heart.fill", subtitle: "100k"),
-            VideoButton(systemImageName: "arrowshape.turn.up.forward.fill", subtitle: "101"),
-        ])
-        // Add more TikTokControls instances with different parameters and unique VideoButton arrays here
-    ]
+        init(tikTokArray: [TikTokControls]) {
+            self.tikTokArray = tikTokArray
+        }
+
 
     
     var body: some View {
